@@ -40,7 +40,7 @@ TodoFlow is a modern, full-stack task management application built with React, N
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/todoflow.git
+git clone https://github.com/Vaishnavi4104/todoflow.git
 cd todoflow
 ```
 
@@ -111,6 +111,29 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - your.email@example.com
+Vaishnavi Shinde - vaishnavibs241@gmail.com
 
-Project Link: [https://github.com/yourusername/todoflow](https://github.com/yourusername/todoflow) 
+Project Link: [https://github.com/Vaishnavi4104/todoflow](https://github.com/yourusername/todoflow)
+
+## Deployment
+
+### Backend (Render)
+- Deploy the backend folder to [Render](https://render.com).
+- Set the following environment variables in Render:
+  - `MONGODB_URI` — your MongoDB Atlas connection string
+  - `JWT_SECRET` — a secure random string
+  - `PORT` — 10000 (or leave blank to use Render's default)
+- After deployment, note your backend URL (e.g., `https://your-backend.onrender.com`).
+
+### Frontend (Vercel)
+- Deploy the `client` folder to [Vercel](https://vercel.com).
+- **Set the Root Directory to `client` in Vercel project settings.**
+- Set the following environment variable in Vercel:
+  - `REACT_APP_API_URL` — your backend Render URL (e.g., `https://your-backend.onrender.com`)
+- Build Command: `npm run build`
+- Output Directory: `build`
+- After deployment, your app will be live at your Vercel URL.
+
+### Notes
+- If you see a 404 on Vercel, make sure the root directory is set to `client`.
+- The backend URL must be accessible from the frontend. 
